@@ -1,0 +1,22 @@
+{
+  "name": "@tangseng/vue-x",
+  "version": "0.0.1",
+  "description": "vue-x is a helper for vuex & axios ",
+  "main": "index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangseng/vue-x.git"
+  },
+  "keywords": [
+    "vue-x",
+    "vue",
+    "vuex",
+    "axios"
+  ],
+  "author": "348312378@qq.com (tangchaosengren@gmail.com)",
+  "license": "MIT"
+}
