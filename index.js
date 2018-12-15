@@ -27,16 +27,23 @@ export default {
           let computedCollect = {}
           let methodsCollect = {}
           ts.forEach(each => {
-            let module
-            if (Object.prototype.toString.call(each) === '[object Object]') {
-              module = each.module
-            } else {
-              module = each
-              each = {}
-            }
-            const { state } = getModule(module)
-            if (typeof state !== 'undefined') {
-              const { computed = {}, methods = {} } = connect(module, each)
+            const isObject = Object.prototype.toString.call(each) === '[object Object]'
+            const module = isObject ? each.module : each
+            const { state, getter, api } = getModule(module)
+            let maps
+            if (typeof state !== 'undefined') {          
+              if (isObject) {
+                maps = {
+                  ...each
+                }
+              } else {
+                maps = {
+                  state: true,
+                  getter,
+                  action: !!api
+                }
+              }
+              const { computed = {}, methods = {} } = connect(module, maps)
               computedCollect = {
                 ...computedCollect,
                 ...computed
@@ -46,9 +53,12 @@ export default {
                 ...methods
               }
             } else {
+              maps = {
+                action: isObject ? each.action : true
+              }
               methodsCollect = {
                 ...methodsCollect,
-                ...connectCache(module, each)
+                ...connectCache(module, maps)
               }
             }
           })
