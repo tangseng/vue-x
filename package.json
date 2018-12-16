@@ -18,5 +18,9 @@
     "axios"
   ],
   "author": "348312378@qq.com (tangchaosengren@gmail.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "vuex": "^3.0.1",
+    "axios": "^0.18.0"
+  }
 }
