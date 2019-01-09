@@ -10,3 +10,4 @@ npm install @tangseng/vue-x
 ![001](https://raw.githubusercontent.com/tangseng/vue-x/master/doc/vue-x.001.png)
 ![002](https://raw.githubusercontent.com/tangseng/vue-x/master/doc/vue-x.002.png)
 ![003](https://raw.githubusercontent.com/tangseng/vue-x/master/doc/vue-x.003.png)
+![004](https://raw.githubusercontent.com/tangseng/vue-x/master/doc/vue-x.004.png)
