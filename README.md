@@ -6,8 +6,5 @@
 npm install @tangseng/vue-x
 ```
 
-先简单示意和说明一下如何使用（下面是图片，加载可能有点慢）
-![001](https://raw.githubusercontent.com/tangseng/vue-x/master/doc/vue-x.001.png)
-![002](https://raw.githubusercontent.com/tangseng/vue-x/master/doc/vue-x.002.png)
-![003](https://raw.githubusercontent.com/tangseng/vue-x/master/doc/vue-x.003.png)
-![004](https://raw.githubusercontent.com/tangseng/vue-x/master/doc/vue-x.004.png)
+新版本进行了概念上的重新设计，正在完善中...
+

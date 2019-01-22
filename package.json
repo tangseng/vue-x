@@ -1,6 +1,6 @@
 {
   "name": "@tangseng/vue-x",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "vue-x is a helper for vuex & axios ",
   "main": "index.js",
   "sideEffects": false,
