@@ -135,11 +135,52 @@ export default {
     return {}
   }, 
 
+  // ts: [
+  //   'common'
+  // ],
+  // ts: [
+  //   ['common', {
+  //     action: true /* 'commonAction' */
+  //   }]
+  // ],
+  // ts: [
+  //   ['common', {
+  //     action: 'fetch'
+  //   }]
+  // ],
+  // ts: [
+  //   ['common', {
+  //     list: true /* 'listState' */
+  //   }]
+  // ],
+  // ts: [
+  //   ['common', {
+  //     list: 'allList'
+  //   }]
+  // ],
+  // ts: [
+  //   ['common', {
+  //     list: {
+  //       state: true, /* 'listState' */
+  //       mutation: true, /* 'listMutation' */
+  //       getter: true /* 'listGetter' */
+  //     }
+  //   }]
+  // ],
+  // ts: [
+  //   ['common', {
+  //     list: {
+  //       state: 'allList',
+  //       mutation: 'listZhiMutation',
+  //       getter: 'listOfGetter'
+  //     }
+  //   }]
+  // ],
   ts: [
     [
       'common', 
       {
-        action: 'commonZhiAction',
+        action: true,
         list: true,
         total: true
       }
@@ -147,8 +188,8 @@ export default {
   ],
 
   async created () {
-    await this.commonZhiAction({
-      id: 111
+    await this.commonAction({
+      id: 1
     })
   }
 }

@@ -8,18 +8,14 @@
 </template>
 
 <script>
-import { store } from './vue-x'
+import './vue-x'
 
 export default {
-  beforeCreate () {
-    this.$store = store 
-  },
-
   ts: [
     [
       'common', 
       {
-        action: 'commonZhiAction',
+        action: true,
         list: true,
         total: true
       }
@@ -27,7 +23,7 @@ export default {
   ],
 
   async created () {
-    await this.commonZhiAction({
+    await this.commonAction({
       id: 1
     })
   }
