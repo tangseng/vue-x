@@ -56,7 +56,10 @@ export default {
   },
 
   /* store设置即使用vuex对数据进行共享，有如下几种设置方式 */
-  // store: true,
+  /* store的直接赋值、state的直接赋值，本质是为要进行共享的数据设置一个初始值，值支持空{}、空[]、true/false、字符串、数字 */
+  /* store直接赋初始值(包括{state: {}}这种设置)，代表整个source的返回值整体作为一个共享数据放入vuex中管理 */
+  /* 否则就是将source的返回值分解成多个小的共享数据去管理，如“store: {list: [],total: 0}”，每个都需要赋初始值 */
+  // store: [], 
   // store: {
   //   state: {}
   // },
