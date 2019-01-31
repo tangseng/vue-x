@@ -84,6 +84,14 @@ export default {
     total: 0
   },
   // store: {
+  //   list: []
+  // },
+  // store: {
+  //   list (data) {
+  //     return (data && data.list) || []
+  //   }
+  // },
+  // store: {
   //   list: {
   //     state: []
   //   }
